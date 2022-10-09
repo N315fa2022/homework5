@@ -206,6 +206,56 @@ nav .links a i {
   border: 2px solid #000;
 }
 
+.blogHead {
+  width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+  margin-top: 117px;
+  background-color: #587C83;
+}
+.blogHead .blog-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blogHead .blog-content .imgDisplay {
+  display: flex;
+  padding: 50px;
+  margin-left: -200px;
+}
+.blogHead .blog-content .imgDisplay img {
+  margin-right: 50px;
+}
+.blogHead .blog-content .imgDisplayOne {
+  margin-left: -213px;
+}
+.blogHead .blog-content .blogDescription h1 {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  font-family: Segoe_UIBold;
+}
+.blogHead .blog-content .blogDescription .blog-text {
+  width: 415px;
+  height: 153px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Segoe_UI;
+}
+.blogHead .blog-content .blogDescription a button {
+  width: 222px;
+  height: 68px;
+  margin-left: 100px;
+  cursor: pointer;
+  background-color: #587C83;
+  border: 2px solid #fff;
+  color: white;
+  font-family: Segoe_UI;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 footer {
   height: 92px;
   background-color: #587C83;

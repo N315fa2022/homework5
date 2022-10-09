@@ -1,0 +1,67 @@
+//PAGE DONE BY ZAYDEE
+.blogHead {
+    width: 1464px;
+    height: 463px;
+    margin: 0 auto;
+    margin-top: 117px;
+    background-color: #587C83;
+
+    .blog-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    .imgDisplay {
+        display: flex;
+        padding: 50px;
+        margin-left: -200px;
+
+        img {
+            margin-right: 50px;
+        }
+    }
+
+    .imgDisplayOne {
+        margin-left: -213px;
+    }
+
+    .blogDescription {
+        h1 {
+            color: #fff;
+            font-size: 32px;
+            text-align: center;
+            font-family: Segoe_UIBold;
+        }
+
+        .blog-text {
+            width: 415px;
+            height: 153px;
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            font-family: Segoe_UI;
+        }
+        a {
+           
+        button {
+            width: 222px;
+            height: 68px;
+            margin-left: 100px;
+            cursor: pointer;
+             background-color: #587C83;
+            border: 2px solid #fff;
+            color: white;
+            font-family: Segoe_UI;
+               text-decoration: none;
+               font-size: 16px;
+
+            }
+        }
+
+    }
+    }
+   
+
+    
+}
+
