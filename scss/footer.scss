@@ -1,0 +1,25 @@
+footer { 
+    height: 92px;
+    background-color: #587C83;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    #footText {
+        color: #fff;
+        font-size: 16px;
+        font-family: Segoe_UI;
+    }
+
+    #footLinks {
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            margin-right: 38px;
+            text-decoration: none;
+            font-family: Segoe_UI;
+        }
+    }
+}
