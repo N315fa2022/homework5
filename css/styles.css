@@ -120,38 +120,81 @@ nav .links a i {
   border: 2px solid #000;
 }
 
-.bookPagesTwo {
+.bookPagesTwo, .bookPagesThree {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.bookPagesTwo .book {
+.bookPagesTwo .book, .bookPagesThree .book {
   display: flex;
   margin-right: 50px;
 }
-.bookPagesTwo .book .bookImage {
+.bookPagesTwo .book .bookImage, .bookPagesThree .book .bookImage {
   width: 100px;
   height: 211px;
   margin-left: 56px;
   margin-right: 34px;
 }
-.bookPagesTwo .book .bookImage img {
+.bookPagesTwo .book .bookImage img, .bookPagesThree .book .bookImage img {
   width: 100%;
   height: 100%;
 }
-.bookPagesTwo .book .bookInfo .infoText {
+.bookPagesTwo .book .bookInfo .infoText, .bookPagesThree .book .bookInfo .infoText {
   width: 280px;
   height: 105px;
 }
-.bookPagesTwo .book .bookInfo p {
+.bookPagesTwo .book .bookInfo p, .bookPagesThree .book .bookInfo p {
   font-size: 16px;
   font-family: Segoe_UI;
 }
-.bookPagesTwo .book .bookInfo .price {
+.bookPagesTwo .book .bookInfo .price, .bookPagesThree .book .bookInfo .price {
   font-size: 16px;
   font-family: Segoe_UIBold;
 }
-.bookPagesTwo .book .bookInfo button {
+.bookPagesTwo .book .bookInfo button, .bookPagesThree .book .bookInfo button {
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  margin-bottom: 38px;
+  cursor: pointer;
+  color: black;
+  font-family: Segoe_UI;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.bookPagesFour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookPagesFour .book {
+  display: flex;
+  margin-right: 50px;
+}
+.bookPagesFour .book .bookImage {
+  width: 115px;
+  height: 200px;
+  margin-left: 56px;
+  margin-right: 34px;
+}
+.bookPagesFour .book .bookImage img {
+  width: 100%;
+  height: 100%;
+}
+.bookPagesFour .book .bookInfo .infoText {
+  width: 250px;
+  height: 105px;
+}
+.bookPagesFour .book .bookInfo p {
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+.bookPagesFour .book .bookInfo .price {
+  font-size: 16px;
+  font-family: Segoe_UIBold;
+}
+.bookPagesFour .book .bookInfo button {
   width: 222px;
   height: 68px;
   font-size: 16px;
