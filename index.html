@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework Five</title>
+    <!-- link to fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <p>Initializing Homework Five</p>
+    <!-- this is a navigation -->
+    <nav>
+      <!-- this is the logo with text for BookNook -->
+      <div class="logo">
+        <!-- logo image -->
+        <div id="logoImage">
+          <img
+            src="images/books-stack-of-three.png"
+            alt="Stack of Three Books"
+          />
+        </div>
+        <!-- text for logo... -->
+        <p class="logoText">The BookNook</p>
+      </div>
+
+      <!-- this is the search option at the top -->
+      <div class="searchBar">
+        <i class="font fa-solid fa-magnifying-glass"></i>
+        <p>Search</p>
+      </div>
+
+      <!-- these are all of the links -->
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#books">Books</a>
+        <a href="#blog">Blog</a>
+        <a href="#account">Account <i class="fa-regular fa-circle-user"></i></a>
+        <a href="#cart">Cart<i class="fa-regular fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+    <hr />
+    <!-- this is a div called app  -->
+    <div id="app"></div>
+    <!-- linking js -->
+    <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="app/model.js" type="module"></script>
+    <script src="app/app.js" type="module"></script>
   </body>
 </html>

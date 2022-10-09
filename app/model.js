@@ -26,7 +26,7 @@ var cart = [];
 export function changePage(pageID, callback) {
     console.log(pageID);
     if (pageID =="" || pageID == "home") {
-        $.get(`pages/home.html`, function (data) {
+        // $.get(`pages/home.html`, function (data) {
             // console.log("data" + data);
             $("#app").html(data);
             callback();
