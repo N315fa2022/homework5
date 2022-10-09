@@ -1,0 +1,27 @@
+{
+  "name": "homeworkfive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+   "serve" : "live-server",
+   "compile-sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N315fa2022/homework5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N315fa2022/homework5/issues"
+  },
+  "homepage": "https://github.com/N315fa2022/homework5#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
