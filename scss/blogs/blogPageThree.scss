@@ -1,0 +1,53 @@
+//PAGE DONE BY ZAYDEE
+
+.blogHeroThree {
+    height: 463px;
+    width: 1464px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.5),
+        rgba(88, 124, 131, 0.5) ), url(../../images/blogs/eread-hero.jpg);
+    background-size: cover;
+
+    h1 {
+       top: 37%;
+       bottom: 50%;
+       left: 35%;
+       color: #fff;
+       font-size: 32px;
+       font-family: Segoe_UIBold;
+        position: absolute;
+        text-align: center;
+    }
+
+    .heroText {
+        top: 50%;
+        bottom: 50%;
+        left: 10%;
+        color: #fff;
+        font-size: 26px;
+        width: 1117px;
+        font-family: Segoe_UIBold;
+         position: absolute;
+         text-align: center;
+    }
+}
+
+.blogThreeContent {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 105px;
+    margin-left: 28px;
+   
+    .blog-three-paragraphs {
+        width: 810px;
+        height: 882px;
+        .bthreeinner {
+            font-size: 16px;
+            text-align: left;
+            font-family: Segoe_UI;
+        }
+    }
+}
