@@ -23,3 +23,18 @@ footer {
         }
     }
 }
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        height: 100px;
+       
+        #footText {
+            margin-top: 20px;
+        }
+
+        #footLinks {
+            margin-bottom: 20px;
+        }
+    }
+}

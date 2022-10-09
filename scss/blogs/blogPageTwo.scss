@@ -51,3 +51,37 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+
+    .blogHero {
+        margin-top: 150px;
+        background-position: center;
+        background-attachment: fixed;
+
+        h1 {
+           margin-left: -450px;
+        }
+
+        .heroText {
+            margin-left: -50px;
+            width: 250px;
+        }
+    }
+
+    .blogTwoContent {
+        flex-direction: column;
+        margin-left: -50px;
+
+        .blogTwoContent {
+
+            .blog-two-paragraphs {
+                width: 100%;
+                .btwoinner {
+                  
+                }
+                
+            }
+        }
+    }
+}

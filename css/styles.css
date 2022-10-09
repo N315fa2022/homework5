@@ -71,6 +71,23 @@ nav .links a i {
   font-weight: bold;
 }
 
+@media (max-width: 800px) {
+  nav {
+    text-align: center;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  nav .searchBar {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  nav a {
+    margin-left: 50px;
+  }
+  hr {
+    display: none;
+  }
+}
 .descriptions {
   margin: 180px 0 66px 77px;
   font-size: 26px;
@@ -206,6 +223,14 @@ nav .links a i {
   border: 2px solid #000;
 }
 
+@media screen and (max-width: 800px) {
+  .bookPages, .bookPagesTwo, .bookPagesThree, .bookPagesFour {
+    flex-direction: column;
+  }
+  .bookPages img, .bookPagesTwo img, .bookPagesThree img, .bookPagesFour img {
+    width: 100%;
+  }
+}
 .blogHead {
   width: 1464px;
   height: 463px;
@@ -256,6 +281,26 @@ nav .links a i {
   font-size: 16px;
 }
 
+@media (max-width: 800px) {
+  .blogHead {
+    height: 100%;
+  }
+  .blogHead .blog-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogHead .blog-content .imgDisplay {
+    flex-direction: column;
+    padding: none;
+    margin-left: -950px;
+  }
+  .blogHead .blog-content .imgDisplayOne {
+    margin-left: -850px;
+  }
+  .blogHead .blog-content .blogDescription {
+    margin-left: -980px;
+  }
+}
 .blogHero {
   height: 463px;
   width: 1464px;
@@ -303,6 +348,27 @@ nav .links a i {
   font-family: Segoe_UI;
 }
 
+@media (max-width: 800px) {
+  .blogHero {
+    margin-top: 150px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .blogHero h1 {
+    margin-left: -450px;
+  }
+  .blogHero .heroText {
+    margin-left: -50px;
+    width: 250px;
+  }
+  .blogTwoContent {
+    flex-direction: column;
+    margin-left: -50px;
+  }
+  .blogTwoContent .blogTwoContent .blog-two-paragraphs {
+    width: 100%;
+  }
+}
 .blogHeroThree {
   height: 463px;
   width: 1464px;
@@ -350,6 +416,27 @@ nav .links a i {
   font-family: Segoe_UI;
 }
 
+@media (max-width: 800px) {
+  .blogHeroThree {
+    margin-top: 150px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .blogHeroThree h1 {
+    margin-left: -450px;
+  }
+  .blogHeroThree .heroText {
+    margin-left: -50px;
+    width: 250px;
+  }
+  .blogThreeContent {
+    flex-direction: column;
+    margin-left: -50px;
+  }
+  .blogThreeContent .blogThreeContent .blog-three-paragraphs {
+    width: 100%;
+  }
+}
 footer {
   height: 92px;
   background-color: #587C83;
@@ -368,6 +455,19 @@ footer #footLinks a {
   margin-right: 38px;
   text-decoration: none;
   font-family: Segoe_UI;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: 100px;
+  }
+  footer #footText {
+    margin-top: 20px;
+  }
+  footer #footLinks {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
