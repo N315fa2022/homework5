@@ -24,8 +24,10 @@ function changeRoute () {
 
 function initURLListener () {
     $(window).on("hashchange", changeRoute);
+    console.log
     changeRoute();
 }
+
 
 function buyNow () {
     $(".bookInfo button").on("click" , (e) => {
