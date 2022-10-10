@@ -1,0 +1,72 @@
+
+
+// main header  on home
+.mainHead {
+    padding: 150px;
+    margin: 0 auto;
+    position: relative;
+    width: 1500px;
+    height: 530px;
+
+}
+
+// main header text on home
+.mainHeadText {
+
+    font-family: 'Segoe UI';
+}
+
+
+// row holds all books
+.bookRow {
+position: relative;
+width: 500px;
+height: 400px;
+background-color: aquamarine;
+font-family: 'Segoe UI.woff';
+display: flex;
+justify-content: space-between;
+padding-left: 40px;
+float: left;
+margin-left: 200px;
+padding-bottom: 40px;
+font-family: 'Segoe UI';
+
+}
+
+// books
+
+.byLee {
+    position: relative;
+    width: 306px;
+    height: 491px;
+    padding: 200px;
+
+}
+
+.byObama {
+    width: 322px;
+    height: 491px;
+    
+
+}
+
+.byKing {
+    width: 327px;
+    height: 491px;
+    
+
+}
+
+// price
+.priceOne{
+font-weight: 30px;
+}
+// button
+.mainAdd{
+
+width:222px;
+height: 68px;
+background-color: white;
+
+}

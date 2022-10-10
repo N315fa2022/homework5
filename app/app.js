@@ -4,15 +4,22 @@ function changeRoute () {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace ("#" , "");
     console.log(hashTag + ' ' + pageID);
-    if (pageID == "" || pageID == "home") {
+    if (pageID == "" || pageID == "account") {
       MODEL.changePage(pageID, initSubmitListener);
     } else if (pageID == "books") {
-        MODEL.changePage(pageID, buyNow);
+   
     } else {
         MODEL.changePage(pageID);
     }
    
-
+ //     MODEL.changePage(pageID, buyNow);
+    // } else if (pageID == "blog") {
+    //     MODEL.changePage(pageID, buyNow);
+    // } else if (pageID == "account") {
+    //     MODEL.changePage(pageID, buyNow);
+    // } else if (pageID == "about") {
+    //     MODEL.changePage(pageID, buyNow);
+    // }
 }
 
 function initURLListener () {
