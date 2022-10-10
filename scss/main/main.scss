@@ -2,18 +2,18 @@
 
 // main header  on home
 .mainHead {
-    padding: 150px;
-    margin: 0 auto;
+    top: 268px;
+left: 234px;
     position: relative;
-    width: 1500px;
-    height: 530px;
-
+    // width: 1500px;
+    // height: 530px;
+    background-color: none;
 }
 
 // main header text on home
 .mainHeadText {
 
-    font-family: 'Segoe UI';
+    font-family: Segoe UI;
 }
 
 
@@ -23,7 +23,7 @@ position: relative;
 width: 500px;
 height: 400px;
 background-color: aquamarine;
-font-family: 'Segoe UI.woff';
+font-family: Segoe UI;
 display: flex;
 justify-content: space-between;
 padding-left: 40px;
