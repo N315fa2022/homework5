@@ -88,7 +88,7 @@ export function changePage(pageID, callback) {
             $("#app").html(data);
             callback();
         });
-    }else if (pageID == "books"){
+    }else if (pageID == "book"){
         $.get(`pages/${pageID}.html`, function (data){
             // console.log("data " + data);
             $("#app").html(data);
@@ -156,18 +156,17 @@ export function changePage(pageID, callback) {
             $.each(cart, function (idx, cartItem){
                 console.log(bookList[cartItem]);
                 let book = bookList[cartItem];
-            //     $(".items").append(`<div class="book">
-            //     <div class="bookImage">
-            //       <img src="images/${book.bookImg}" alt="" />
-            //     </div>
-            //     <div class="bookInfo">
-            //       <h4>${book.bookTitle}</h4>
-            //       <p>Author:${book.bookAuthor}</p>
-            //       <p>Price: ${book.price}</p>
-            //       <p>Qty: 1</p>
-            //     </div>
-            //   </div>
-            // </div>`);
+                $(".items").append(`<div class="book">
+           <div class="bookImage">
+            <img src="images/${book.bookImg}" alt="" />
+           </div>
+            <div class="bookInfo">
+            <p class = "infoText">${book.bookInfo}</p>
+            <p class = "price">${book.bookPrice}</p>
+             <p>Qty: 1</p>
+           </div>
+            </div>
+            </div>`);
             })
     });
 }

@@ -88,6 +88,90 @@ nav .links a i {
     display: none;
   }
 }
+.aboutTop {
+  font-family: Segoe_UI;
+}
+
+.aboutBottom {
+  font-family: Segoe_UI;
+}
+
+.aboutPicOne {
+  padding: 40px;
+  width: 383px;
+  height: 201px;
+}
+
+.aboutParaOne {
+  padding: 20px;
+  width: 1134px;
+  height: 170px;
+}
+
+.aboutParaTwo {
+  padding: 30px;
+  width: 1134px;
+  height: 170px;
+}
+
+.aboutTitle {
+  position: relative;
+  margin-left: 60px;
+}
+
+.mainHead {
+  top: 268px;
+  left: 234px;
+  position: relative;
+  background-color: none;
+}
+
+.mainHeadText {
+  font-family: Segoe UI;
+}
+
+.bookRow {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: aquamarine;
+  font-family: Segoe UI;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  float: left;
+  margin-left: 200px;
+  padding-bottom: 40px;
+  font-family: "Segoe UI";
+}
+
+.byLee {
+  position: relative;
+  width: 306px;
+  height: 491px;
+  padding: 200px;
+}
+
+.byObama {
+  width: 322px;
+  height: 491px;
+}
+
+.byKing {
+  width: 327px;
+  height: 491px;
+}
+
+.priceOne {
+  font-weight: 30px;
+}
+
+.mainAdd {
+  width: 222px;
+  height: 68px;
+  background-color: white;
+}
+
 .descriptions {
   margin: 180px 0 66px 77px;
   font-size: 26px;
