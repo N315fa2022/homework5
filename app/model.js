@@ -79,6 +79,18 @@ var bookListFour = [ // this is the booklist for the fourth section
         bookPrice: "$7.99",
          bookImg: "books/fun-facts-about-space.jpg",
     },
+      {
+        bookInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookPrice: "$19.99",
+         bookImg: "books/firestarter.png",
+    },
+
+    {
+        bookInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookPrice: "$15.99",
+         bookImg: "books/to-kill-a-mockingbird.png",
+    },
+
 ]
 export function changePage(pageID, callback) {
     console.log(pageID);
@@ -105,6 +117,7 @@ export function changePage(pageID, callback) {
                 </div>
               </div>
             </div>`);
+            
             })
             $.each(bookListTwo,  function(idx, book){ // second set of books
                 $(".bookPagesTwo").append(`<div class="book">
@@ -118,6 +131,7 @@ export function changePage(pageID, callback) {
                 </div>
               </div>
             </div>`);
+           
             })
             $.each(bookListThree,  function(idx, book){ // third set of books
                 $(".bookPagesThree").append(`<div class="book">
@@ -131,6 +145,7 @@ export function changePage(pageID, callback) {
                 </div>
               </div>
             </div>`);
+            
             })
             $.each(bookListFour,  function(idx, book){ // fourth set of books
                 $(".bookPagesFour").append(`<div class="book">
@@ -145,10 +160,11 @@ export function changePage(pageID, callback) {
               </div>
             </div>`);
             })
-            callback('You have added this book to your cart');
+           
         });
 
     }
+    // cart
      else {
         $.get(`pages/${pageID}.html`, function (data){
             console.log("data " + data);
@@ -156,19 +172,17 @@ export function changePage(pageID, callback) {
             $.each(cart, function (idx, cartItem){
                 console.log(bookList[cartItem]);
                 let book = bookList[cartItem];
-                
-            //     $(".items").append(`<div class="book">
-            //     <div class="bookImage">
-            //       <img src="images/${book.bookImg}" alt="" />
-            //     </div>
-            //     <div class="bookInfo">
-            //       <h4>${book.bookTitle}</h4>
-            //       <p>Author:${book.bookAuthor}</p>
-            //       <p>Price: ${book.price}</p>
-            //       <p>Qty: 1</p>
-            //     </div>
-            //   </div>
-            // </div>`);
+                $(".items").append(`<div class="book">
+                <div class="bookImage">
+                  <img src="images/${book.bookImg}" alt="" />
+                </div>
+                <div class="bookInfo">
+                  <h4>${book.bookTitle}</h4>
+                  <p>Price: $${book.price}</p>
+                  <p>Qty: 1</p>
+                </div>
+              </div>
+            </div>`);
             })
     });
 }
@@ -182,4 +196,5 @@ export function setUserInfo(userObject){
 export function addToCart (bookIdx) {
     cart.push(bookIdx);
     $("#cartCount").html(cart.length.toString());
+    callback.addToCart("You have added this book to your cart");
 }

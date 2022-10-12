@@ -24,7 +24,7 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media all and  (max-width: 200px){
     footer {
         flex-direction: column;
         height: 100px;

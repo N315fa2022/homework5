@@ -59,7 +59,7 @@ nav {
     }
 }
 
-@media (max-width: 800px) {
+@media all and  (max-width: 200px) {
     nav {
         width: 25%;
         text-align: center;

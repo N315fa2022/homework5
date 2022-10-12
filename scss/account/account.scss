@@ -92,7 +92,7 @@ color: #000000;
 opacity: 1;
 }
 
-@media (max-width: 760px) {
+@media all and (max-width: 760px) {
    .account {
         display: inline-block;
         padding-right: 40px;

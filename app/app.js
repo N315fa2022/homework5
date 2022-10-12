@@ -7,20 +7,20 @@ function changeRoute () {
     if (pageID == "" || pageID == "#account") {
       MODEL.changePage(pageID, initSubmitListener);
     } else if (pageID == "#books") {
-   
+        MODEL.changePage(pageID, buyNow);
     } else {
         MODEL.changePage(pageID);
     }
-   
- //     MODEL.changePage(pageID, buyNow);
+}
+
+ //     
     // } else if (pageID == "blog") {
     //     MODEL.changePage(pageID, buyNow);
     // } else if (pageID == "account") {
     //     MODEL.changePage(pageID, buyNow);
     // } else if (pageID == "about") {
     //     MODEL.changePage(pageID, buyNow);
-    // }
-}
+    // }}
 
 function initURLListener () {
     $(window).on("hashchange", changeRoute);
@@ -37,6 +37,7 @@ function buyNow () {
     });
 }
 
+// user information
 function initSubmitListener() {
     $("#submit").on("click", function (e){
         console.log("submit");
