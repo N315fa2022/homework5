@@ -4,9 +4,9 @@ function changeRoute () {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace ("#" , "");
     console.log(hashTag + ' ' + pageID);
-    if (pageID == "" || pageID == "account") {
+    if (pageID == "" || pageID == "#account") {
       MODEL.changePage(pageID, initSubmitListener);
-    } else if (pageID == "books") {
+    } else if (pageID == "#books") {
    
     } else {
         MODEL.changePage(pageID);

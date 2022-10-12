@@ -4,12 +4,13 @@
 .descriptions {
     margin: 180px 0 66px 77px;
     font-size: 26px;
+   
     font-family: Segoe_UIBold;
 }
 
 //this is what will make all books w thumbnails sit side by side
 .bookPages {
-
+   
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,9 +1,52 @@
 //PAGE DONE BY OLUWATISHE
-.aboutTop{
+//  spacing at top
+.about{
+    padding-top: 200px;
+    // padding-bottom: 10px;
     font-family: Segoe_UI;
 }
-.aboutBottom{
+// the pics in about 
+.aboutPic {
+    width: 300px;
+    height: 500px;
+}
+// the pics in about 
+.aboutPic {
+    width: 300px;
+    height: 500px;
+}
+
+.aboutLeft{
+    position: relative;
+    padding-left: 100px;
+    bottom: 30px;
+    
+}
+// the text in about
+.aboutRight{
+    position: relative;
     font-family: Segoe_UI;
+    width:830px;
+    height: fit-content;
+    // background-color: aqua;
+    margin-left: 30%;
+    bottom: 540px;
+}
+.aboutLeft{
+    position: relative;
+    padding-left: 100px;
+    bottom: 30px;
+    
+}
+// the text in about
+.blogRight{
+    position: relative;
+    font-family: Segoe_UI;
+    width:830px;
+    height: fit-content;
+    // background-color: aqua;
+    margin-left: 30%;
+    bottom: 540px;
 }
 
 .aboutPicOne{
@@ -12,23 +55,30 @@
     height: 201px;
 }  
 
-
+h4{
+    position: relative;
+    padding-left: 45%;
+}
 
 
 .aboutParaOne {
-    
+    position: relative;
+  
 padding: 20px;
-width: 1134px;
+width: 934px;
 height: 170px;
+// background-color: tomato;
 }
 .aboutParaTwo {
-    padding: 30px;
-    width: 1134px;
+    position: relative;
+  
+    padding: 20px;
+    width: 934px;
     height: 170px;
 }
 
 
 .aboutTitle{
     position:relative;
-    margin-left: 60px;
+    margin-left: 36%;
 }

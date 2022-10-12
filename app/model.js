@@ -145,7 +145,7 @@ export function changePage(pageID, callback) {
               </div>
             </div>`);
             })
-            callback();
+            callback('You have added this book to your cart');
         });
 
     }
@@ -156,6 +156,7 @@ export function changePage(pageID, callback) {
             $.each(cart, function (idx, cartItem){
                 console.log(bookList[cartItem]);
                 let book = bookList[cartItem];
+                
             //     $(".items").append(`<div class="book">
             //     <div class="bookImage">
             //       <img src="images/${book.bookImg}" alt="" />

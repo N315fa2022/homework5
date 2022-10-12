@@ -1,0 +1,103 @@
+.account{
+    width: 1200px;
+    display: flex;
+
+}
+#login{
+    position: relative;
+    float: center;
+    left: 200px;
+   padding-top: 300px;
+   bottom: 90PX;
+ } 
+ 
+ #sign-up{
+
+    position: relative;
+    float: left;
+    left: 30%;
+   padding-top: 200px;
+ }  
+
+
+.form{
+    font-family: Segoe_UI;
+}
+
+input{
+    padding-top: 40px;
+    color: black;
+    width: 200px;
+    border: none;
+  border-bottom: 2px solid black;
+}
+::-webkit-input-placeholder { 
+    color: black;
+}
+
+// #sign-up{
+//     position: relative;
+//     float: center;
+//     left: 200px;
+//    padding-top: 300px;
+//     opacity: 0;
+//     pointer-events: none;
+//     position: relative;
+//     float: left;
+//     /* right: 400px; */
+// }
+//  #signup :active {
+//     opacity: 1;
+//     pointer-events: auto;
+//     width: 600px;
+//     position: relative;
+//     float: left;
+//     right: 174px;
+//    padding-top: 300px;
+// }
+// .forms.show-signup .form.login{
+//     opacity: 0;
+//     pointer-events: none;
+// }
+// button
+#submit{
+background: #587C83 0% 0% no-repeat padding-box;
+border: 1px solid #FFFFFF;
+opacity: 1;
+color: white;
+position: relative;
+top: 100px;
+font-family: Segoe_UI;
+width:170px;
+height: 45px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    margin-left: 60px;
+   
+}
+.login{
+    position: relative;
+    left: -250px;
+}
+.signup{
+    position: relative;
+    left: -250px;
+}
+    
+.logTitle{
+    text-align: left;
+font: normal normal normal 26px/31px Segoe_UI;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+@media (max-width: 760px) {
+   .account {
+        display: inline-block;
+        padding-right: 40px;
+   } 
+   #sign-up {
+        left: 220px;
+   }
+}

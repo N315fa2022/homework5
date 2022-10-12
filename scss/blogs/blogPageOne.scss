@@ -1,0 +1,133 @@
+//PAGE DONE BY OLUWATISHE
+
+.blogOneHero {
+    height: 530px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px; 
+    top: 120px;                                                                                                                                                        
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.5),
+        rgba(88, 124, 131, 0.5) ), url(../images/blogs/february-favorites-hero.jpg);
+    background-size: cover;
+
+    h1 {
+       top: 30%;
+      padding-right: 90px;
+       margin: 0 auto;
+       color: #fff;
+       font-size: 32px;
+       font-family: Segoe_UIBold;
+        position: relative;
+        text-align: center;
+    }
+
+    .heroTextOne {
+        top: 200px;
+      
+        right: 10px;
+        color: #fff;
+        font-size: 16px;
+        width: 1117px;
+        font-family: Segoe_UIBold;
+         position: relative;
+         text-align: center;
+    }
+
+    .heroTextTwo {
+        top: 50%;
+        bottom: 50px;
+        // left: 10%;
+        color: #fff;
+        font-size: 16px;
+        width: 1117px;
+        font-family: Segoe_UI;
+         position: relative;
+         text-align: center;
+    }
+}
+
+.blogs{
+    padding-top: 200px;
+    // padding-bottom: 10px;
+    font-family: Segoe_UI;
+}
+// the pics in about 
+
+.tagImg {
+    position: relative;
+    padding: 40px;
+    padding-top: 80px;  
+    padding-left: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+
+#Two {
+    position: relative;
+    bottom: 400px;
+}
+// the text in about
+
+.blogRight{
+    position: relative;
+    font-family: Segoe_UI;
+    width:930px;
+    height: 600px;
+    // background-colosnr: aqua;
+    // margin-left: 30%;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.aboutParaOne {
+    position: relative;
+    margin-left: -20px;
+}
+
+.bTop{
+
+    position: relative;
+top: 20px;
+padding-bottom: 20px;
+}
+
+.bBot{
+
+position: relative;
+bottom: 370px;
+padding-bottom: 20px;
+}
+.blogParaTwo {
+    width: 934px;
+height: 170px;
+    position: relative;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    bottom: 380px;
+}
+h3{
+    position: relative;
+    
+    right: 0.2%;
+    bottom: 40px;
+}
+
+@media (max-width:1200px) {
+    .cont {
+        width: fit-content;
+         display: inline-block;
+         padding-right: 40px;
+    } 
+    .blogRight {
+        width: 40%;                                                                                                                                              
+        margin-left: 520px ;                                                                                                                        
+         word-wrap: normal;
+    }
+   .blogParaTwo{
+        width: 40% ;                                                                                                                                                                                       
+        margin-left: 500px;
+         word-wrap: normal;
+    }
+
+    
+}
