@@ -224,7 +224,7 @@ export function changePage(pageID, callback) {
             console.log("data " + data);
             $("#app").html(data);
             //CART PAGE HTML
-      $.each(cart, function (cartItem) {
+      $.each(cart, function (idx, cartItem) {
         console.log(bookList[cartItem]);
         let book = bookList[cartItem];
         $(".items").append(`<div class="book">
@@ -236,7 +236,7 @@ export function changePage(pageID, callback) {
         <p class = "cartPrice>Price: ${book.price}</p>
         <p class= "stock-stats">In Stock</p>
         <div class = "change">
-        <p class = "qt">  Qty: 1</p>
+        <p class = "qt">  Qty: ${idx}</p>
         <a href="#books">change</a>
         <span>||</span>
         <a href="#books">delete</a>
