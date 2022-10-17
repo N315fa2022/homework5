@@ -1,1 +1,83 @@
-//PAGE DONE BY OLUWATISHE
+.items {
+    
+
+    .book {
+        
+        margin-top: 40px;
+        border-color: #000;
+        border-width: 1px;
+        border-style: solid;
+        align-items: left;
+        display: flex;
+        
+    .bookcover {
+        // margin-top: 100px;
+        margin-left: 50px;
+        // display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        width: 210px;
+        // object-fit: contain;
+        img {
+            width: 205px;
+            height: 317px;
+            justify-content: left;
+            align-items: left;
+            margin: 12px;
+
+
+        }
+    }
+
+
+        .bookinfo {
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin: 12px;
+            margin-left: 25px;
+
+
+            .cart-book-title {
+                font-family: Segoe_UIBold;
+                font-size: 16px;
+            }
+
+            .cartPrice {
+                font-size: 16px;
+                font-family: Segoe_UIBold;
+            }
+
+            .stock-stats {
+                font-size: 18px;
+                font-family: Segoe_UI;
+            }
+            .change {
+                display: flex; 
+                
+
+                .qt {
+                    color: #000;
+                    font-family: Segoe_UI;
+                    font-size: 16;
+                    margin-right: 15px;
+                }
+                span {
+                    margin-left: 5px;
+                    margin-top: 3px;
+                    margin-right: 5px;
+                }
+                a {
+                   
+                font-family: Segoe_UI;
+                color: #000;
+                font-size: 16px;
+            }
+            }
+
+           
+        }
+    }
+
+}

@@ -1,5 +1,7 @@
 //PAGE DONE BY OLUWATISHE
 
+//PAGE DONE BY OLUWATISHE
+
 // main header  on home
 .mainHead {
     height: 530px;
@@ -11,7 +13,7 @@
         rgba(88, 124, 131, 0.5),
         rgba(88, 124, 131, 0.5) ), url(../../images/home/home-hero.png);
     background-size: cover;
-}
+
 
 // main header text on home
 .mainHeadText {
@@ -24,7 +26,7 @@ text-transform: uppercase;
 font-family: Segoe_UI;
     margin-left: 780px ;
     top: 205px;
-}
+
 
 
 // text inside header
@@ -44,125 +46,68 @@ letter-spacing: 0px;
     letter-spacing: 0px;
 
     }
-
-
-// row holds all books
-.bookRow {
-position: relative;
-width: 500px;
-height: 400px;
-//  background-color: aquamarine;
-font-family: Segoe UI;
-display: flex;
-justify-content: space-between;
-
-float: left;
-margin-left: 60px;
-// 
-top: 500PX;
-padding-top: 60px;
-padding-bottom: 40px;
-font-family: 'Segoe UI';
-
 }
-.now {
-    position: relative;
-    width: 300px;
-    .heroText{
-        width: 100%;
-        display: flex;
+}
+
+.home-books {
+    margin-top: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .home-shop {
+        margin: 0 auto;
+        img {
+            width: 306px;
+            height: 491px;
+            margin-bottom: 49px;
+        }
+
+    .homeBook-texting {
+        width: 400px;
+        height: 153px;
+        font-family: Segoe_UI;
     }
-}
-// books
-.homeBook{
-  
-    position: relative;
-    padding:    120px;
-    padding-left: 100px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    margin-left: -70px;
-    justify-content: space-between;
-    // left: 40px;
-}
+    .pricing {
+        width: 101px;
+        height: 43px;
+        font-family: Segoe_UIBold;
+       margin-left: 130px;   
+    }
 
-
-.byLee {
-    position: relative;
-    width: 222px;
-    height: 391px;
-   
-    margin-right: 140px;
-}
-.byObama {
-    width: 222px;
-    height: 391px;
-    margin-right: 140px;
-}
-
-
-.byKing {
-    width: 222px;
-    height: 391px;
-    margin-right: 40px;
-
-
-}
-
-// text in book stuff
-
-.heroText {
-    width: 322px;
-    // background-color: aqua;
-    margin-left: 40px;
-    
-    
-}
-
-// price
-.priceOne{
-font-weight: 30px;
-width: 322px;
-margin: 0 auto;
-padding-top: 20px;
-padding-left: 50%;
-
-font-family: Segoe_UIBold;
-// background-color: aquamarine;
-}
-// button
-.mainAdd{
-margin-top: 40px;
-width:222px;
-height: 68px;
-background-color: white;
-margin-bottom: 200px;
-margin-left: 70px;
+    button {
+        width: 222px;
+        height: 68px;
+        font-size: 16px;
+        margin-bottom: 38px;
+        margin-left: 50px;
+        cursor: pointer;
+        color: black;
+         font-family: Segoe_UI;
+         background-color: #fff;
+        border: 2px solid #000;
+    }
+    }
 }
 
 @media all and (max-width: 800px){
     .mainHead{
         width: 100%;
-        height: 300px;
-        
-    }
-.now{
-    width: 400px;
-    height: 800px;
-     display:flex;
-     align-items: center;
-     overflow: scroll;
-    
-}
-.homeBook {
-    width: 20%;
-    
-}
+    .mainHeadText {
+        .hTextOne {
+            margin-left: -700px;
+        }
 
-.heroText{
-    height: 40px;
-    width: 200px;
-    display:inline-flex;
+        .hTextTwo {
+            margin-left: -700px;
+        }
+    }
+    }
+    .home-books {
+        flex-direction: column ;
+        
+
+        .home-shop {
+            margin-bottom: 60px;
+        }
+    }
 }
-}
-    

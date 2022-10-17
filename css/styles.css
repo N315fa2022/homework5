@@ -1,17 +1,907 @@
-/* Error: expected "{".
- *   ,
- * 5 | @import "account/account.scss";
- *   |                               ^
- *   '
- *   scss/styles.scss 5:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 5 \2502  @import "account/account.scss";\a   \2502                                ^\a   \2575 \a   scss/styles.scss 5:31  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Segoe_UI;
+  src: url(../css/fonts/Segoe\ UI.woff);
+}
+@font-face {
+  font-family: Segoe_UIBold;
+  src: url(../css/fonts/Segoe\ UI\ Bold.woff);
+}
+nav {
+  height: 80px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo #logoImage img {
+  width: 73px;
+  height: 73px;
+  margin-left: 15px;
+}
+nav .logo .logoText {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+nav .searchBar {
+  opacity: 35%;
+  width: 604px;
+  height: 34px;
+  display: flex;
+  background-color: #587C83;
+}
+nav .searchBar .font {
+  padding: 10px;
+}
+nav .searchBar p {
+  color: #000;
+  padding: 5px;
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+nav .logoText {
+  font-size: 16px;
+}
+nav .links a {
+  color: #000;
+  font-size: 16px;
+  margin-right: 30px;
+  font-family: Segoe_UI;
+  text-decoration: none;
+}
+nav .links a i {
+  font-weight: bold;
+}
+
+@media all and (max-width: 800px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .searchBar {
+    margin-left: 50px;
+    width: 100%;
+  }
+  nav .links {
+    align-items: center;
+    margin-left: 100px;
+  }
+  hr {
+    display: none;
+  }
+}
+.mainHead {
+  height: 530px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url(../../images/home/home-hero.png);
+  background-size: cover;
+}
+.mainHead .mainHeadText {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Segoe_UI;
+  margin-left: 780px;
+  top: 205px;
+}
+.mainHead .mainHeadText .hTextOne {
+  text-align: left;
+  font-display: bold;
+  font-size: 40px;
+  letter-spacing: 0px;
+}
+.mainHead .mainHeadText .hTextTwo {
+  text-align: left;
+  font-display: bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+.home-books {
+  margin-top: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home-books .home-shop {
+  margin: 0 auto;
+}
+.home-books .home-shop img {
+  width: 306px;
+  height: 491px;
+  margin-bottom: 49px;
+}
+.home-books .home-shop .homeBook-texting {
+  width: 400px;
+  height: 153px;
+  font-family: Segoe_UI;
+}
+.home-books .home-shop .pricing {
+  width: 101px;
+  height: 43px;
+  font-family: Segoe_UIBold;
+  margin-left: 130px;
+}
+.home-books .home-shop button {
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  margin-bottom: 38px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: black;
+  font-family: Segoe_UI;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+@media all and (max-width: 800px) {
+  .mainHead {
+    width: 100%;
+  }
+  .mainHead .mainHeadText .hTextOne {
+    margin-left: -700px;
+  }
+  .mainHead .mainHeadText .hTextTwo {
+    margin-left: -700px;
+  }
+  .home-books {
+    flex-direction: column;
+  }
+  .home-books .home-shop {
+    margin-bottom: 60px;
+  }
+}
+.about {
+  padding-top: 200px;
+  font-family: Segoe_UI;
+}
+
+.aboutPic {
+  width: 300px;
+  height: 500px;
+}
+
+.aboutPic {
+  width: 300px;
+  height: 500px;
+}
+
+.aboutLeft {
+  position: relative;
+  padding-left: 100px;
+  bottom: 30px;
+}
+
+.aboutRight {
+  position: relative;
+  font-family: Segoe_UI;
+  width: 830px;
+  height: fit-content;
+  margin-left: 30%;
+  bottom: 540px;
+}
+
+.aboutLeft {
+  position: relative;
+  padding-left: 100px;
+  bottom: 30px;
+}
+
+.blogRight {
+  position: relative;
+  font-family: Segoe_UI;
+  width: 830px;
+  height: fit-content;
+  margin-left: 30%;
+  bottom: 540px;
+}
+
+.aboutPicOne {
+  padding: 40px;
+  width: 383px;
+  height: 201px;
+}
+
+h4 {
+  position: relative;
+  padding-left: 45%;
+}
+
+.aboutParaOne {
+  position: relative;
+  padding: 20px;
+  width: 934px;
+  height: 170px;
+}
+
+.aboutParaTwo {
+  position: relative;
+  padding: 20px;
+  width: 934px;
+  height: 170px;
+}
+
+.aboutTitle {
+  position: relative;
+  margin-left: 36%;
+}
+
+@media all and (max-width: 800px) {
+  .bookPages, .bookPagesTwo, .bookPagesThree, .bookPagesFour {
+    flex-direction: column;
+  }
+  .bookPages img, .bookPagesTwo img, .bookPagesThree img, .bookPagesFour img {
+    width: 100%;
+  }
+}
+.blogHead {
+  width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+  margin-top: 117px;
+  background-color: #587C83;
+}
+.blogHead .blog-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blogHead .blog-content .imgDisplay {
+  display: flex;
+  padding: 50px;
+  margin-left: -200px;
+}
+.blogHead .blog-content .imgDisplay img {
+  margin-right: 50px;
+}
+.blogHead .blog-content .imgDisplayOne {
+  margin-left: -213px;
+}
+.blogHead .blog-content .blogDescription h1 {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  font-family: Segoe_UIBold;
+}
+.blogHead .blog-content .blogDescription .blog-text {
+  width: 415px;
+  height: 153px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Segoe_UI;
+}
+.blogHead .blog-content .blogDescription a button {
+  width: 222px;
+  height: 68px;
+  margin-left: 100px;
+  cursor: pointer;
+  background-color: #587C83;
+  border: 2px solid #fff;
+  color: white;
+  font-family: Segoe_UI;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .blogHead {
+    height: 100%;
+  }
+  .blogHead .blog-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogHead .blog-content .imgDisplay {
+    flex-direction: column;
+    padding: none;
+    margin-left: -950px;
+  }
+  .blogHead .blog-content .imgDisplayOne {
+    margin-left: -850px;
+  }
+  .blogHead .blog-content .blogDescription {
+    margin-left: -980px;
+  }
+}
+.blogOneHero {
+  height: 530px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+  top: 120px;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url(../images/blogs/february-favorites-hero.jpg);
+  background-size: cover;
+}
+.blogOneHero h1 {
+  top: 30%;
+  padding-right: 90px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 32px;
+  font-family: Segoe_UIBold;
+  position: relative;
+  text-align: center;
+}
+.blogOneHero .heroTextOne {
+  top: 200px;
+  right: 10px;
+  color: #fff;
+  font-size: 16px;
+  width: 1117px;
+  font-family: Segoe_UIBold;
+  position: relative;
+  text-align: center;
+}
+.blogOneHero .heroTextTwo {
+  top: 50%;
+  bottom: 50px;
+  color: #fff;
+  font-size: 16px;
+  width: 1117px;
+  font-family: Segoe_UI;
+  position: relative;
+  text-align: center;
+}
+
+.blogs {
+  padding-top: 200px;
+  font-family: Segoe_UI;
+}
+
+.tagImg {
+  position: relative;
+  padding: 40px;
+  padding-top: 80px;
+  padding-left: 150px;
+}
+
+#Two {
+  position: relative;
+  bottom: 400px;
+}
+
+.blogRight {
+  position: relative;
+  font-family: Segoe_UI;
+  width: 930px;
+  height: 600px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.aboutParaOne {
+  position: relative;
+  margin-left: -20px;
+}
+
+.bTop {
+  position: relative;
+  top: 20px;
+  padding-bottom: 20px;
+}
+
+.bBot {
+  position: relative;
+  bottom: 370px;
+  padding-bottom: 20px;
+}
+
+.blogParaTwo {
+  width: 934px;
+  height: 170px;
+  position: relative;
+  margin-bottom: 90px;
+  margin-left: 20px;
+  bottom: 380px;
+}
+
+h3 {
+  position: relative;
+  right: 0.2%;
+  bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .cont {
+    width: fit-content;
+    display: inline-block;
+    padding-right: 40px;
+  }
+  .blogRight {
+    width: 40%;
+    margin-left: 520px;
+    word-wrap: normal;
+  }
+  .blogParaTwo {
+    width: 40%;
+    margin-left: 500px;
+    word-wrap: normal;
+  }
+}
+.blogHero {
+  height: 463px;
+  width: 1464px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url(../../images/blogs/book-club-hero.jpg);
+  background-size: cover;
+}
+.blogHero h1 {
+  top: 37%;
+  bottom: 50%;
+  left: 35%;
+  color: #fff;
+  font-size: 32px;
+  font-family: Segoe_UIBold;
+  position: absolute;
+  text-align: center;
+}
+.blogHero .heroText {
+  top: 50%;
+  bottom: 50%;
+  left: 10%;
+  color: #fff;
+  font-size: 26px;
+  width: 1117px;
+  font-family: Segoe_UIBold;
+  position: absolute;
+  text-align: center;
+}
+
+.blogTwoContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 105px;
+  margin-left: 28px;
+}
+.blogTwoContent .blog-two-paragraphs {
+  width: 810px;
+  height: 882px;
+}
+.blogTwoContent .blog-two-paragraphs .btwoinner {
+  font-size: 16px;
+  text-align: left;
+  font-family: Segoe_UI;
+}
+
+@media (max-width: 800px) {
+  .blogHero {
+    margin-top: 150px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .blogHero h1 {
+    margin-left: -450px;
+  }
+  .blogHero .heroText {
+    margin-left: -50px;
+    width: 250px;
+  }
+  .blogTwoContent {
+    flex-direction: column;
+    margin-left: -50px;
+  }
+  .blogTwoContent .blogTwoContent .blog-two-paragraphs {
+    width: 100%;
+  }
+}
+.blogHeroThree {
+  height: 463px;
+  width: 1464px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url(../../images/blogs/eread-hero.jpg);
+  background-size: cover;
+}
+.blogHeroThree h1 {
+  top: 37%;
+  bottom: 50%;
+  left: 35%;
+  color: #fff;
+  font-size: 32px;
+  font-family: Segoe_UIBold;
+  position: absolute;
+  text-align: center;
+}
+.blogHeroThree .heroText {
+  top: 50%;
+  bottom: 50%;
+  left: 10%;
+  color: #fff;
+  font-size: 26px;
+  width: 1117px;
+  font-family: Segoe_UIBold;
+  position: absolute;
+  text-align: center;
+}
+
+.blogThreeContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 105px;
+  margin-left: 28px;
+}
+.blogThreeContent .blog-three-paragraphs {
+  width: 810px;
+  height: 882px;
+}
+.blogThreeContent .blog-three-paragraphs .bthreeinner {
+  font-size: 16px;
+  text-align: left;
+  font-family: Segoe_UI;
+}
+
+@media (max-width: 800px) {
+  .blogHeroThree {
+    margin-top: 150px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .blogHeroThree h1 {
+    margin-left: -450px;
+  }
+  .blogHeroThree .heroText {
+    margin-left: -50px;
+    width: 250px;
+  }
+  .blogThreeContent {
+    flex-direction: column;
+    margin-left: -50px;
+  }
+  .blogThreeContent .blogThreeContent .blog-three-paragraphs {
+    width: 100%;
+  }
+}
+.descriptions {
+  margin: 180px 0 66px 77px;
+  font-size: 26px;
+  font-family: Segoe_UIBold;
+}
+
+.bookPages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookPages .book {
+  display: flex;
+  margin-right: 50px;
+}
+.bookPages .book .bookImage {
+  width: 100px;
+  height: 100px;
+  margin-left: 56px;
+  margin-right: 34px;
+}
+.bookPages .book .bookImage img {
+  width: 100%;
+  height: 100%;
+}
+.bookPages .book .bookInfo .infoText {
+  width: 280px;
+  height: 105px;
+}
+.bookPages .book .bookInfo p {
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+.bookPages .book .bookInfo .price {
+  font-size: 16px;
+  font-family: Segoe_UIBold;
+}
+.bookPages .book .bookInfo button {
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  margin-bottom: 38px;
+  cursor: pointer;
+  color: black;
+  font-family: Segoe_UI;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.bookPagesTwo, .bookPagesThree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookPagesTwo .book, .bookPagesThree .book {
+  display: flex;
+  margin-right: 50px;
+}
+.bookPagesTwo .book .bookImage, .bookPagesThree .book .bookImage {
+  width: 100px;
+  height: 211px;
+  margin-left: 56px;
+  margin-right: 34px;
+}
+.bookPagesTwo .book .bookImage img, .bookPagesThree .book .bookImage img {
+  width: 100%;
+  height: 100%;
+}
+.bookPagesTwo .book .bookInfo .infoText, .bookPagesThree .book .bookInfo .infoText {
+  width: 280px;
+  height: 105px;
+}
+.bookPagesTwo .book .bookInfo p, .bookPagesThree .book .bookInfo p {
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+.bookPagesTwo .book .bookInfo .price, .bookPagesThree .book .bookInfo .price {
+  font-size: 16px;
+  font-family: Segoe_UIBold;
+}
+.bookPagesTwo .book .bookInfo button, .bookPagesThree .book .bookInfo button {
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  margin-bottom: 38px;
+  cursor: pointer;
+  color: black;
+  font-family: Segoe_UI;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.bookPagesFour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookPagesFour .book {
+  display: flex;
+  margin-right: 50px;
+}
+.bookPagesFour .book .bookImage {
+  width: 115px;
+  height: 200px;
+  margin-left: 56px;
+  margin-right: 34px;
+}
+.bookPagesFour .book .bookImage img {
+  width: 100%;
+  height: 100%;
+}
+.bookPagesFour .book .bookInfo .infoText {
+  width: 250px;
+  height: 105px;
+}
+.bookPagesFour .book .bookInfo p {
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+.bookPagesFour .book .bookInfo .price {
+  font-size: 16px;
+  font-family: Segoe_UIBold;
+}
+.bookPagesFour .book .bookInfo button {
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  margin-bottom: 38px;
+  cursor: pointer;
+  color: black;
+  font-family: Segoe_UI;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 800px) {
+  .bookPages, .bookPagesTwo, .bookPagesThree, .bookPagesFour {
+    flex-direction: column;
+  }
+  .bookPages img, .bookPagesTwo img, .bookPagesThree img, .bookPagesFour img {
+    width: 100%;
+  }
+}
+.account {
+  width: 1200px;
+  display: flex;
+}
+
+#login {
+  position: relative;
+  float: center;
+  left: 200px;
+  padding-top: 300px;
+  bottom: 90PX;
+}
+
+#sign-up {
+  position: relative;
+  float: left;
+  left: 30%;
+  padding-top: 200px;
+}
+
+.form {
+  font-family: Segoe_UI;
+}
+
+input {
+  padding-top: 40px;
+  color: black;
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+#submit {
+  background: #587C83 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+  color: white;
+  position: relative;
+  top: 100px;
+  font-family: Segoe_UI;
+  width: 170px;
+  height: 45px;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  margin-left: 60px;
+}
+
+.login {
+  position: relative;
+  left: -250px;
+}
+
+.signup {
+  position: relative;
+  left: -250px;
+}
+
+.logTitle {
+  text-align: left;
+  font: normal normal normal 26px/31px Segoe_UI;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media all and (max-width: 760px) {
+  .account {
+    display: inline-block;
+    padding-right: 40px;
+  }
+  #sign-up {
+    left: 220px;
+  }
+}
+.items .book {
+  margin-top: 40px;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  align-items: left;
+  display: flex;
+}
+.items .book .bookcover {
+  margin-left: 50px;
+  align-items: left;
+  justify-content: space-evenly;
+  width: 210px;
+}
+.items .book .bookcover img {
+  width: 205px;
+  height: 317px;
+  justify-content: left;
+  align-items: left;
+  margin: 12px;
+}
+.items .book .bookinfo {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 12px;
+  margin-left: 25px;
+}
+.items .book .bookinfo .cart-book-title {
+  font-family: Segoe_UIBold;
+  font-size: 16px;
+}
+.items .book .bookinfo .cartPrice {
+  font-size: 16px;
+  font-family: Segoe_UIBold;
+}
+.items .book .bookinfo .stock-stats {
+  font-size: 18px;
+  font-family: Segoe_UI;
+}
+.items .book .bookinfo .change {
+  display: flex;
+}
+.items .book .bookinfo .change .qt {
+  color: #000;
+  font-family: Segoe_UI;
+  font-size: 16;
+  margin-right: 15px;
+}
+.items .book .bookinfo .change span {
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.items .book .bookinfo .change a {
+  font-family: Segoe_UI;
+  color: #000;
+  font-size: 16px;
+}
+
+footer {
+  height: 92px;
+  width: 100%;
+  background-color: #587C83;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer #footText {
+  color: #fff;
+  font-size: 16px;
+  font-family: Segoe_UI;
+}
+footer #footLinks a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 38px;
+  text-decoration: none;
+  font-family: Segoe_UI;
+}
+
+@media all and (max-width: 200px) {
+  footer {
+    flex-direction: column;
+    height: 100px;
+  }
+  footer #footText {
+    margin-top: 20px;
+  }
+  footer #footLinks {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
