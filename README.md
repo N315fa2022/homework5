@@ -5,7 +5,7 @@
 
 BookNook Collaboration: 
 
-Zaydee Dominguez-Chang <br>
+Zaydee Dominguez-Chang <br> <br>
 Oluwatishe Elesinnla <br> <br>
 
 Welcome to BookNook's official site, your go-to online bookstore and literary hub, meticulously designed for seamless browsing and shopping. Leveraging problem-solving skills and technical expertise, we crafted this platform to ensure an intuitive user experience. Explore curated collections, discover new reads, and stay informed with insightful blogs. Join our community today and embark on a literary journey.
